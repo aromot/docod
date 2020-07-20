@@ -71,26 +71,7 @@ const getLoaders = (env) => {
       { test: /\.(js|jsx)$/, exclude: /node_modules/, use: ['babel-loader'] },
       { test: /\.html$/, exclude: /src/, use: ["html-loader"] },
       { test: /\.css$/, use: ['style-loader', 'css-loader'] },
-      { test: /\.less$/, use: [lessOutputLoader, 'css-loader', 'less-loader'] },
-      // {
-      //   test: /\.less$/,
-      //   use: [
-      //     {
-      //       loader: "style-loader"
-      //     },
-      //     {
-      //       loader: "css-loader",
-      //       options: {
-      //         sourceMap: true,
-      //         modules: true
-      //         // localIdentName: "[local]___[hash:base64:5]"
-      //       }
-      //     },
-      //     {
-      //       loader: "less-loader"
-      //     }
-      //   ]
-      // }
+      { test: /\.less$/, use: [lessOutputLoader, 'css-loader', 'less-loader'] }
     ]
   };
 };
@@ -105,10 +86,16 @@ const getPlugins = env => {
         new webpack.HotModuleReplacementPlugin()
       ];
       break;
-      case 'prod':
-        plugins = [
-          new MiniCssExtractPlugin(),
-        new HtmlWebpackPlugin(),
+    case 'prod':
+      plugins = [
+        new MiniCssExtractPlugin(),
+        new HtmlWebpackPlugin({
+          title: '',
+          meta: {
+            viewport: 'width=device-width, initial-scale=1, shrink-to-fit=no'
+          },
+          minify: false
+        }),
         // new ManifestPlugin(),
         new CleanWebpackPlugin({ verbose: true })
       ];
