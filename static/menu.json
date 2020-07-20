@@ -1,0 +1,151 @@
+[
+  {
+    "label": "Fruits",
+    "children": [
+      {
+        "path": "/pages/ppppommes.html",
+        "label": "Pommes"
+      },
+      {
+        "path": "/pages/poires.html",
+        "label": "Poires"
+      },
+      {
+        "path": "/pages/abricots.html",
+        "label": "Abricots"
+      }
+    ]
+  },
+  {
+    "label": "Fruits",
+    "children": [
+      {
+        "path": "/pages/pommes.html",
+        "label": "Pommes"
+      },
+      {
+        "path": "/pages/poires.html",
+        "label": "Poires"
+      },
+      {
+        "path": "/pages/abricots.html",
+        "label": "Abricots"
+      }
+    ]
+  },
+  {
+    "label": "Fruits",
+    "children": [
+      {
+        "path": "/pages/pommes.html",
+        "label": "Pommes"
+      },
+      {
+        "path": "/pages/poires.html",
+        "label": "Poires"
+      },
+      {
+        "path": "/pages/abricots.html",
+        "label": "Abricots"
+      }
+    ]
+  },
+  {
+    "label": "Fruits",
+    "children": [
+      {
+        "path": "/pages/pommes.html",
+        "label": "Pommes"
+      },
+      {
+        "path": "/pages/poires.html",
+        "label": "Poires"
+      },
+      {
+        "path": "/pages/abricots.html",
+        "label": "Abricots"
+      }
+    ]
+  },
+  {
+    "label": "Fruits",
+    "children": [
+      {
+        "path": "/pages/pommes.html",
+        "label": "Pommes"
+      },
+      {
+        "path": "/pages/poires.html",
+        "label": "Poires"
+      },
+      {
+        "path": "/pages/abricots.html",
+        "label": "Abricots"
+      }
+    ]
+  },
+  {
+    "label": "Fruits",
+    "children": [
+      {
+        "path": "/pages/pommes.html",
+        "label": "Pommes"
+      },
+      {
+        "path": "/pages/poires.html",
+        "label": "Poires"
+      },
+      {
+        "path": "/pages/abricots.html",
+        "label": "Abricots"
+      }
+    ]
+  },
+  {
+    "label": "Fruits",
+    "children": [
+      {
+        "path": "/pages/pommes.html",
+        "label": "Pommes"
+      },
+      {
+        "path": "/pages/poires.html",
+        "label": "Poires"
+      },
+      {
+        "path": "/pages/abricots.html",
+        "label": "Abricots"
+      }
+    ]
+  },
+  {
+    "label": "Fruits",
+    "children": [
+      {
+        "path": "/pages/pommes.html",
+        "label": "Pommes"
+      },
+      {
+        "path": "/pages/poires.html",
+        "label": "Poires"
+      },
+      {
+        "path": "/pages/abricots.html",
+        "label": "Abricots"
+      }
+    ]
+  },
+  {
+    "label": "Couleurs",
+    "children": [
+      {
+        "path": "/pages/couleurs/bleu.html",
+        "label": "Bleu"
+      },
+      {
+        "path": "/pages/couleurs/vert.html",
+        "label": "Vert"
+      }
+    ]
+  }
+]

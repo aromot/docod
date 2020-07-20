@@ -1,0 +1,98 @@
+//
+// Globals
+//
+html, body, #app {
+  min-height: 100%;
+  height: 100%
+}
+*, ::after, ::before {
+  box-sizing: border-box
+}
+body {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"
+}
+table {
+  border-collapse: collapse
+}
+a {
+  text-decoration: none;
+  color: #05c;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+//
+// Layout
+//
+.docod__sidebar-layout {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+  height: 100%
+}
+.docod__main-content {
+  flex: 1;
+  overflow: scroll
+}
+
+//
+// Sidebar
+//
+.docod__sidebar {
+  background: #eee;
+  width: 200px;
+  overflow-y: scroll;
+  &.fixed-title {
+    position: relative;
+    .top-title {
+      position: sticky;
+      top: 0;
+      left: 0;
+      right: 0;
+    }
+  }
+  .top-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: 0 0 10px;
+    background: #ddd;
+    text-align: center;
+    padding: 5px;
+  }
+  .toc-container {
+    padding: 0 10px 10px;
+  }
+}
+
+//
+// Table of content
+//
+.docod__table-of-content {
+  .group {
+    margin: 0 0 15px;
+    .group-title {
+      font-weight: bold;
+      margin: 0 0 3px;
+    }
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0 0 0 10px;
+  }
+}
+
+//
+// Homepage
+//
+.docod__homepage {
+  padding: 15px;
+  .toc {
+    background: #e0eaf7;
+    padding: 15px 100px 15px 15px;
+    border-radius: 2px;
+    border: 1px solid #05c;
+    display: inline-block;
+  }
+}
