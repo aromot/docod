@@ -1,0 +1,15 @@
+[
+  {
+    "label": "Group 1",
+    "children": [
+      {
+        "path": "/pages/page_1.html",
+        "label": "Page 1"
+      },
+      {
+        "path": "/pages/page_2.html",
+        "label": "Page 2"
+      }
+    ]
+  }
+]

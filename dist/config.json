@@ -1,0 +1,12 @@
+{
+  "appName": "My DocoD App",
+  "title": "[appName]",
+  "homepage": false,
+  "sidebar": {
+    "showTopTitle": true,
+    "isTopTitleFixed": true,
+    "topTitle": "- [appName] -",
+    "backgroundColor": "#eeeeee",
+    "width": "200px"
+  }
+}
