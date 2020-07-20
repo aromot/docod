@@ -105,3 +105,6 @@ dist
 
 # VS Code project files
 *.code-workspace
+
+# Static files
+static/
