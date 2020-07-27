@@ -1,11 +1,12 @@
 {
-  "name": "react-app-boilerplate",
+  "name": "docod",
   "version": "1.0.0",
   "description": "React App boilerplate",
   "main": "src/index.js",
   "scripts": {
     "dev": "webpack-dev-server --mode development --config webpack.config.dev.js",
     "build": "set NODE_ENV=production&& webpack -p --config webpack.config.prod.js",
+    "compiled_only": "node ./compiled_only.js",
     "profile": "webpack --profile --json > compilation-stats.json"
   },
   "repository": {
@@ -47,5 +48,9 @@
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0",
     "webpack-manifest-plugin": "^2.2.0"
+  },
+  "dependencies": {
+    "recursive-copy": "^2.0.10",
+    "rimraf": "^3.0.2"
   }
 }
