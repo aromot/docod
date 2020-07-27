@@ -1,9 +1,18 @@
-# docod
+# DocoD
 Get notes/pages published quickly.
 
 ## Installation
 
-Copy/paste the files from the `dist` directory.
+Installing DocoD will remove all sources. Do the following:
+```
+npm install --only=prod
+npm run compiled_only
+```
+This will turn the current project directory into a production-ready app, i.e.:
+
+- remove everything but the `dist` directory,
+- copy the `dist` directory contents into the current directory,
+- remove the `dist` directory.
 
 ## Usage
 
