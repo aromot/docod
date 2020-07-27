@@ -1,9 +1,17 @@
 # DocoD
 Get notes/pages published quickly.
 
+## Quick view
+
+To get a quick view of the result, do :
+```
+npx serve dist
+```
+This will keep the source files. You just get a view of the build from the `dist` directory.
+
 ## Installation
 
-Installing DocoD will remove all sources. Do the following:
+Installing DocoD will remove all sources, NO UNDO POSSIBLE (you will have to clone this repo again). Do the following:
 ```
 npm install --only=prod
 npm run compiled_only
