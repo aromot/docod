@@ -75,7 +75,6 @@ const App = ({prefix}) => {
   }, []);
 
   const {menu, errorType, error} = state;
-  console.log('state:', state);
 
   if(errorType === 'config') {
     if(error === 'file_not_found')
@@ -106,10 +105,13 @@ const App = ({prefix}) => {
             <SidebarLayout.mainContent>
               <Switch>
                 {menuItems.map((item, i) => {
+
                   const path = makePath(prefix, item.path);
+                  const cache = item.hasOwnProperty('cache') ? item.cache : false;
+
                   return (
                     <Route key={i} path={path}>
-                      <Page path={path} />
+                      <Page path={path} cache={cache} />
                     </Route>
                   )
                 })}

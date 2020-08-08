@@ -3,14 +3,17 @@ import Loader from './Loader';
 import PageNotfound from './Errors/PageNotfound';
 import PageError from './Errors/PageError';
 
-const Page = ({path}) => {
+const Page = ({path, cache = false}) => {
 
   const [content, setContent] = useState();
   const [error, setError] = useState();
 
   useEffect(() => {
     let err;
-    fetch(path)
+
+    const url = cache ? path : path + '?' + Date.now();
+
+    fetch(url)
     .then(r => {
       if(r.status === 404) {
         err = 'file_not_found';

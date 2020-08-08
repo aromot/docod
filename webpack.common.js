@@ -39,7 +39,7 @@ const getEntry = name => {
   return entry;
 };
 
-const getOutput = (env, prodPath, prodPublicPath) => {
+const getOutput = (env, version, prodPath, prodPublicPath) => {
   switch (env) {
     case 'dev':
       return {
@@ -53,7 +53,7 @@ const getOutput = (env, prodPath, prodPublicPath) => {
       return {
         // path: prodPath,
         // publicPath: prodPublicPath,
-        filename: '[name].js',
+        filename: '[name]-'+ version +'.js',
         chunkFilename: '[name].js'
       };
     
@@ -184,13 +184,13 @@ const getOptimization = () => {
   // }
 };
 
-const getConfig = ({appName, env, prodPath = '', prodPublicPath = ''}) => {
+const getConfig = ({appName, version, env, prodPath = '', prodPublicPath = ''}) => {
 
   env = env.toLowerCase();
 
   return {
     entry: getEntry(appName),
-    output: getOutput(env, prodPath, prodPublicPath),
+    output: getOutput(env, version, prodPath, prodPublicPath),
     module: getLoaders(env),
     plugins: getPlugins(env),
     resolve: getResolvers(),
