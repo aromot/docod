@@ -71,3 +71,20 @@ This is a sample of the `menu.json` file:
   }
 ]
 ```
+
+All `path`s are called the "no cache" way (i.e with the current timestamp to avoid caching). You can add a `cache` key to change this behavious like so:
+
+```json
+[
+  {
+    "label": "Fruits",
+    "children": [
+      {
+        "path": "/pages/pommes.html",
+        "label": "Pommes",
+        "cache": true
+      }
+    ]
+  }
+]
+```
