@@ -61,7 +61,7 @@ This is a sample of the `menu.json` file:
 ```json
 [
   {
-    "label": "Fruits",
+    "label": "Fruitz",
     "children": [
       {
         "path": "/pages/pommes.html",
